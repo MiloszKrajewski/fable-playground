@@ -1,0 +1,9 @@
+{
+    "module": "commonjs",
+    "sourceMaps": true,
+    "projFile": "./src/Playground.fsproj",
+    "outDir": "temp",
+    "scripts": {
+        "postbuild": "webpack"
+    }
+}
