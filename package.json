@@ -7,8 +7,8 @@
     "fable": "fable",
     "webpack": "webpack"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Playground",
+  "license": "BSD",
   "devDependencies": {
     "fable-compiler": "^0.5.8",
     "source-map-loader": "^0.1.5",
@@ -17,7 +17,6 @@
     "webpack": "^1.13.2"
   },
   "dependencies": {
-    "fable-core": "^0.5.5",
-    "fable-import": "0.0.3"
+    "fable-core": "^0.5.5"
   }
 }
