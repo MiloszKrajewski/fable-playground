@@ -4,7 +4,7 @@ var root = path.resolve("public");
 
 var cfg = {
     devtool: "source-map",
-    entry: "Main.js",
+    entry: "app",
     output: {
         path: root,
         filename: "bundle.js"
@@ -16,13 +16,21 @@ var cfg = {
                 exclude: /node_modules/,
                 loader: "source-map-loader"
             }
+        ],
+        loaders: [
+            { 
+                test: /\.ts$/, 
+                exclude: /node_modules/,
+                loader: 'ts-loader' 
+            }
         ]
     },
     resolve: {
+        extensions: ['', '.ts', '.js'],
         root: [
             path.resolve('.'),
             path.resolve('./src'),
-            path.resolve('./temp'),
+            path.resolve('./build/fsx'),
         ]
     }
 };

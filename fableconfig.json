@@ -2,7 +2,7 @@
     "module": "commonjs",
     "sourceMaps": true,
     "projFile": "./src/Playground.fsproj",
-    "outDir": "temp",
+    "outDir": "./build/fsx",
     "scripts": {
         "postbuild": "webpack"
     }

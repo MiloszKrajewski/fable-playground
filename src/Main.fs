@@ -13,5 +13,3 @@ module Main =
         let message = mul2 7 |> sprintf "2 * 7 = %d"
         let element = Browser.document.getElementById "main"
         element.innerText <- message
-
-    main ()

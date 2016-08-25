@@ -1,10 +1,10 @@
 {
-  "name": "shooter",
+  "name": "playground",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Playground for Fable",
+  "main": "./src/app.js",
   "scripts": {
-    "build": "fable",
+    "fable": "fable",
     "webpack": "webpack"
   },
   "author": "",
@@ -12,9 +12,12 @@
   "devDependencies": {
     "fable-compiler": "^0.5.8",
     "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
     "webpack": "^1.13.2"
   },
   "dependencies": {
-    "fable-core": "^0.5.5"
+    "fable-core": "^0.5.5",
+    "fable-import": "0.0.3"
   }
 }
