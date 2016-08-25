@@ -9,6 +9,9 @@ module Main =
     let mul2 = Module.multiply 2
 
     let main () = 
-        mul2 7 |> printfn "2 * 7 = %d"
+        printfn "Main.main ()"
+        let message = mul2 7 |> sprintf "2 * 7 = %d"
+        let element = Browser.document.getElementById "main"
+        element.innerText <- message
 
     main ()

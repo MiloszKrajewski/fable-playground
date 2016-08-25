@@ -4,7 +4,7 @@ var root = path.resolve("public");
 
 var cfg = {
     devtool: "source-map",
-    entry: "./temp/Main.js",
+    entry: "Main.js",
     output: {
         path: root,
         filename: "bundle.js"
@@ -16,6 +16,13 @@ var cfg = {
                 exclude: /node_modules/,
                 loader: "source-map-loader"
             }
+        ]
+    },
+    resolve: {
+        root: [
+            path.resolve('.'),
+            path.resolve('./src'),
+            path.resolve('./temp'),
         ]
     }
 };
