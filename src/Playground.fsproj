@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JsInterop.fs" />
     <Compile Include="Module.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>
