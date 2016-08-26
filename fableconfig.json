@@ -2,8 +2,5 @@
     "module": "commonjs",
     "sourceMaps": true,
     "projFile": "./src/Playground.fsproj",
-    "outDir": "./build/fsx",
-    "scripts": {
-        "postbuild": "webpack"
-    }
+    "outDir": "./build/fsx"
 }

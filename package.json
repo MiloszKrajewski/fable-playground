@@ -17,6 +17,7 @@
     "webpack": "^1.13.2"
   },
   "dependencies": {
+    "core-js": "^2.4.1",
     "fable-core": "^0.5.5"
   }
 }
