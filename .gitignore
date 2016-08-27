@@ -5,3 +5,4 @@ public/bundle.js*
 src/bin/
 src/obj/
 build/
+public/bundled/

@@ -28,13 +28,15 @@ def pause():
     print("Press <enter>...")
     _ = input()
 
-fable = spawn("fable -w", "Fable").pid
-webpack = spawn("webpack --watch", "Webpack").pid
+fable = spawn(".\\node_modules\\.bin\\fable -w", "Fable").pid
+webpack = spawn(".\\node_modules\\.bin\\webpack --watch", "Webpack").pid
+server = spawn(".\\node_modules\\.bin\\http-server ./public", "Server").pid
 
 wait(5)
 pause()
 
 kill(fable, "Fable")
 kill(webpack, "Webpack")
+kill(server, "Server")
 
 print("Done.")
